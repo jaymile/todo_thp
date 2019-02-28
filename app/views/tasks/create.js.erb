@@ -1,0 +1,12 @@
+$("<%= j render 'task', task: @task %>").appendTo($('#<%= @category.id %> ul')).hide().slideDown();
+
+console.log($(".checkbox"));
+$(".checkbox").bind("change", function() {
+  var bool = this.checked ? true : false;
+  var regex = /task_/;
+  $.ajax({
+    url: "/tasks/" + this.id.replace(regex, ""),
+    type: "PUT",
+    data: { status: bool }
+  });
+});

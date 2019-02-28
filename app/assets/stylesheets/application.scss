@@ -1,0 +1,36 @@
+@import "variables/personal_variables";
+@import "variables/bootstrap_variables";
+
+@import "bootstrap";
+@import "font-awesome";
+@import "components/*";
+
+.navbar {
+	background-color: #f1f1f1;
+	height: 62px;
+}
+
+.navbar .container {
+	margin-top: 0px;
+}
+
+.navbar input {
+	min-width: 360px;
+}
+.navbar input, .navbar button {
+	border-radius: 0;
+	border-right-width: 0;
+	height: 34px;
+}
+.container {
+	margin-top: 20px;
+}
+
+.list-group-item {
+	padding: .25rem 1.25rem;
+}
+
+.fullname {
+	min-width: 120px;
+	display: inline-block;
+}
